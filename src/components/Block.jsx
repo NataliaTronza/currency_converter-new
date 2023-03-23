@@ -11,6 +11,7 @@ const Block = ({ value, currency, onChangeCurrency, inputPrice }) => {
     onChangeCurrency(curr);
     setOpen(prev => !prev)
   }
+  
 
   React.useEffect(() => {
     const handleClickOutside = (event) => {
@@ -24,6 +25,7 @@ const Block = ({ value, currency, onChangeCurrency, inputPrice }) => {
       document.body.removeEventListener('click', handleClickOutside)
     }
   }, [])
+
 
   return (
     <div className="block">
